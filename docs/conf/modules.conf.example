@@ -27,7 +27,7 @@
 #                                                                     #
 
 # Testing typo here
-# neglible
+# negligible
 
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
 # MD5 module: Allows other modules to generate MD5 hashes, usually for
@@ -170,10 +170,10 @@
 #<module name="allowinvite">
 
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
-# Alltime module: Shows time on all connected servers at once.
-# This module is oper-only and provides /ALLTIME.
-# To use, ALLTIME must be in one of your oper class blocks.
-#<module name="alltime">
+# All-time module: Shows time on all connected servers at once.
+# This module is oper-only and provides /ALL-TIME.
+# To use, ALL-TIME must be in one of your oper class blocks.
+#<module name="all-time">
 
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
 # Anticaps module: Adds channel mode +B which allows you to punish
