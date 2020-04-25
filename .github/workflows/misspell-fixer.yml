@@ -1,12 +1,13 @@
 name: misspell fixer
 on:
   schedule:
-    - cron: '30 7 25 * *'
+    - cron: '0 8 25 * *'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "::set-env name=DATE::$(date +'%Y-%m-%d')"
+    - name : Set the date as an env variable
+      run: echo "::set-env name=DATE::$(date +'%Y-%m-%d')"
     - uses: actions/checkout@v2
     - name: Whitelist some directories and files
       run: |
