@@ -26,6 +26,9 @@
 # this file.                                                          #
 #                                                                     #
 
+# Testing typo here
+# neglible
+
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
 # MD5 module: Allows other modules to generate MD5 hashes, usually for
 # cryptographic uses and security.
