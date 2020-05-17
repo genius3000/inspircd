@@ -41,7 +41,7 @@
 # usually for cryptographic uses and security.
 #
 # Adding a typo here for testing purposes.
-# Other neglible uses.
+# Other negligible uses.
 # IMPORTANT:
 # Other modules such as password_hash may rely on this module being
 # loaded to function. Certain modules such as spanningtree will
