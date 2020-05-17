@@ -40,6 +40,8 @@
 # SHA256 module: Allows other modules to generate SHA256 hashes,
 # usually for cryptographic uses and security.
 #
+# Adding a typo here for testing purposes.
+# Other neglible uses.
 # IMPORTANT:
 # Other modules such as password_hash may rely on this module being
 # loaded to function. Certain modules such as spanningtree will
