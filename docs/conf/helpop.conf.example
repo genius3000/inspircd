@@ -9,7 +9,7 @@
 # (note that it can span multiple lines!).
 #   -- w00t 16/dec/2006
 #
-
+# Purposeful typo is overriden here.
 <config format="xml">
 
 <alias text="HELP" replace="HELPOP $2-">
