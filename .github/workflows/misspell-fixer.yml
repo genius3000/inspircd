@@ -35,8 +35,8 @@ jobs:
     - uses: peter-evans/create-pull-request@v2.4.4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        #branch: ${{ env.REF_BRANCH }}+fix-spellings-${{ env.DATE }}
-        branch: $ref_branch+fix-spellings-$date
+        branch: ${{ env.REF_BRANCH }}+fix-spellings-${{ env.DATE }}
+        #branch: $ref_branch+fix-spellings-$date
         author: 'InspIRCd Robot <noreply@inspircd.org>'
         committer: 'InspIRCd Robot <noreply@inspircd.org>'
         commit-message: 'Fixes by misspell-fixer'
