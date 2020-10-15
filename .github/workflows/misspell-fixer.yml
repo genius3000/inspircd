@@ -1,7 +1,8 @@
 name: Misspell fixer
 on:
-  schedule:
-    - cron: '0 0 15 * *'
+  - push
+  #schedule:
+    #- cron: '0 0 15 * *'
 jobs:
   build:
     if: github.repository == 'inspircd/inspircd'
@@ -12,8 +13,10 @@ jobs:
     - uses: actions/checkout@v2
     - name : Set a couple env variables
       run: |
-        echo "::set-env name=DATE::$(date +'%Y-%m-%d')"
-        echo "::set-env name=REF_BRANCH::${REF_BRANCH//refs\/heads\//}"
+        #echo "::set-env name=DATE::$(date +'%Y-%m-%d')"
+        #echo "::set-env name=REF_BRANCH::${REF_BRANCH//refs\/heads\//}"
+        echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+        echo "ref_branch=${REF_BRANCH//refs\/heads\//}" >> $GITHUB_ENV
     - name: Whitelist some directories and files
       run: |
         echo "\
@@ -32,7 +35,8 @@ jobs:
     - uses: peter-evans/create-pull-request@v2.4.4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ env.REF_BRANCH }}+fix-spellings-${{ env.DATE }}
+        #branch: ${{ env.REF_BRANCH }}+fix-spellings-${{ env.DATE }}
+        branch: $ref_branch+fix-spellings-$date
         author: 'InspIRCd Robot <noreply@inspircd.org>'
         committer: 'InspIRCd Robot <noreply@inspircd.org>'
         commit-message: 'Fixes by misspell-fixer'
