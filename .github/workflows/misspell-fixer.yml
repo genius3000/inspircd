@@ -18,7 +18,7 @@ jobs:
         ^./.github/workflows
         ^./.mailmap
         ^./vendor
-        ^./make/directive.pm:281:atleast
+        ^./make/directive.pm:.*:atleast
         ^./src/modules/m_disable.cpp:119:existant
         ^.*\.\(cpp\|h\).*eiter$
         ALLTIME$
