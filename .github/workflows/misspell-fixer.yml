@@ -20,7 +20,7 @@ jobs:
         ^./vendor
         ^./make/directive.pm:281:atleast
         ^./src/modules/m_disable.cpp:119:existant
-        ^.*\.(cpp|h).*eiter$
+        ^.*\.\(cpp\|h\).*eiter$
         ALLTIME$
         alltime$
         Alltime$\
