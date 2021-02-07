@@ -1,10 +1,8 @@
 name: Misspell fixer
 on:
-  schedule:
-    - cron: '0 0 15 * *'
+  - push
 jobs:
   build:
-    if: github.repository == 'inspircd/inspircd'
     runs-on: ubuntu-latest
     env:
       REF_BRANCH: ${{ github.ref }}
